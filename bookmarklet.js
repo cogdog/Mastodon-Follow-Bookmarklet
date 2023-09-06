@@ -9,7 +9,7 @@ javascript:(function() {
       var url = 'https://YOUR_INSTANCE_NAME_HERE/authorize_interaction?uri=https://' + community + '/@' + user;
       window.location.href = url;
     } else {
-      alert("Invalid input. Please use the format '@user@instance'.");
+      prompt("That did not work, try again? Use  format '@user@instance'.", input);
     }
   }
 })();
